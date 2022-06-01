@@ -1,0 +1,11 @@
+[package]
+name = "robots"
+version = "0.1.0"
+edition = "2021"
+authors = ["Jamie Hall <hello@jamiehall.eu>"]
+license = "MIT"
+homepage = "https://github.com/jamhall/martian-robots"
+
+[dependencies]
+structopt = "0.3.25"
+nom = "7"

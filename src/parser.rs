@@ -2,7 +2,7 @@ use nom::branch::alt;
 use nom::bytes::complete::tag;
 use nom::character::complete::{digit1, newline, space0};
 use nom::combinator::{map, map_res, recognize, verify};
-use nom::multi::{many0, many1};
+use nom::multi::{many0, many1, many_m_n};
 use nom::sequence::{preceded, separated_pair, terminated, tuple};
 use nom::IResult;
 
@@ -67,7 +67,7 @@ fn orientation(input: &str) -> IResult<&str, Orientation> {
 }
 
 fn instructions(input: &str) -> IResult<&str, Vec<Instruction>> {
-    many1(instruction)(input)
+    many_m_n(0, 100,instruction)(input)
 }
 
 fn instruction(input: &str) -> IResult<&str, Instruction> {

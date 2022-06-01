@@ -1,6 +1,8 @@
 # Martian Robots
 
-This is a solution to the Martian Robots code challenge.
+[![Build](https://github.com/jamhall/mars-robots-challenge/actions/workflows/build.yml/badge.svg)](https://github.com/jamhall/mars-robots-challenge/actions/workflows/build.yml)
+
+A solution for the Martian Robots code challenge.
 
 ## Getting started
 
